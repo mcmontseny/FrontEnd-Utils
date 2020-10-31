@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Styles -->
-  <link rel="stylesheet" href="./style.scss" />
+  <link rel="stylesheet" href="./styles.css" type="text/css" />
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
   <link
@@ -12,12 +12,82 @@
     href="https://fonts.googleapis.com/css?family=Montserrat"
   />
   <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+  <script
+    src="https://kit.fontawesome.com/48ad76d3f1.js"
+    crossorigin="anonymous"
+  ></script>
   <body>
-    <!-- Footer -->
-    <footer></footer>
+    <nav class="navbar">
+      <h4 class="text-white m-0">MCM FrontEnd Utils</h4>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-title">
+        <h1>BEST TOOLS FOR WEB DEVELOPERS</h1>
+      </div>
+    </header>
+
+    <!-- JSON Formatter -->
+    <div class="tool-container">
+      <p class="tool-title">JSON FORMATTER</p>
+      <p class="tool-subtitle">
+        Esta herramienta nos puede servir para convertir un JSON a otros
+        formatos (XML y CSV). Tambien dispone de la opciones de Formatar,
+        Minificar o Validar un objecto JSON.
+      </p>
+
+      <div class="json-container">
+        <textarea class="json-textarea" rows="18" cols="90">
+Input JSON</textarea
+        >
+        <div class="json-buttons-container">
+          <button class="json-buttons">Beautify</button>
+          <button class="json-buttons">Minify</button>
+          <button class="json-buttons">Validate</button>
+          <button class="json-buttons">JSON to XML</button>
+          <button class="json-buttons">JSON to CSV</button>
+          <button class="json-buttons">Download</button>
+        </div>
+        <textarea class="json-textarea" rows="18" cols="90">
+Output JSON</textarea
+        >
+      </div>
+    </div>
+
+    <!-- <div class="tool-container">
+      <h1 class="tool-title">FORMATER TEXT</h1>
+    </div> -->
+
+    <!-- <div class="tool-container">
+      <h1 class="tool-title">FORMATER TEXT</h1>
+    </div> -->
+
+    <!-- <div class="tool-container">
+        <h1 class="tool-title">FORMATER TEXT</h1>
+      </div> -->
   </body>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-text">
+        <h4 class="text-white m-0">Created by: Marc Casamitjana i Montseny</h4>
+      </div>
+      <div class="footer-social-icons social-icon">
+        <a
+          href="https://github.com/mcmontseny"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-github text-white"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/blogytech/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa fa-instagram text-white"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 </html>
