@@ -214,7 +214,7 @@ button {
 .json-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .json-textarea {
@@ -223,6 +223,7 @@ button {
 
 .json-buttons {
   margin: 8px 0px;
+  padding: 10px 20px;
 }
 
 .json-buttons-container {

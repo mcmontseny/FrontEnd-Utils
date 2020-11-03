@@ -35,22 +35,40 @@
         formatos (XML y CSV). Tambien dispone de la opciones de Formatar,
         Minificar o Validar un objecto JSON.
       </p>
+      <p class="tool-subtitle">
+        Ex: {"name":"Steve","surname":"Jobs","company":"Apple"}
+      </p>
 
       <div class="json-container">
-        <textarea class="json-textarea" rows="18" cols="90">
-Input JSON</textarea
-        >
+        <textarea
+          id="json-input"
+          class="json-textarea"
+          rows="18"
+          cols="120"
+          placeholder="Input JSON"
+        ></textarea>
         <div class="json-buttons-container">
-          <button class="json-buttons">Beautify</button>
-          <button class="json-buttons">Minify</button>
-          <button class="json-buttons">Validate</button>
-          <button class="json-buttons">JSON to XML</button>
-          <button class="json-buttons">JSON to CSV</button>
-          <button class="json-buttons">Download</button>
+          <button class="json-buttons" onclick="jsonBeautify()">
+            Beautify
+          </button>
+          <button class="json-buttons" onclick="jsonMinify()">Minify</button>
+          <button class="json-buttons" onclick="jsonValidate()">
+            Validate
+          </button>
+          <button class="json-buttons" onclick="jsonToXml()">
+            JSON to XML
+          </button>
+          <button class="json-buttons" onclick="downloadOutput()">
+            Download Output
+          </button>
         </div>
-        <textarea class="json-textarea" rows="18" cols="90">
-Output JSON</textarea
-        >
+        <textarea
+          id="json-output"
+          class="json-textarea"
+          rows="18"
+          cols="120"
+          placeholder="Output JSON"
+        ></textarea>
       </div>
     </div>
 
@@ -65,29 +83,33 @@ Output JSON</textarea
     <!-- <div class="tool-container">
         <h1 class="tool-title">FORMATER TEXT</h1>
       </div> -->
-  </body>
 
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-text">
-        <h4 class="text-white m-0">Created by: Marc Casamitjana i Montseny</h4>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-text">
+          <h4 class="text-white m-0">
+            Created by: Marc Casamitjana i Montseny
+          </h4>
+        </div>
+        <div class="footer-social-icons social-icon">
+          <a
+            href="https://github.com/mcmontseny"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-github text-white"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/blogytech/"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fa fa-instagram text-white"></i>
+          </a>
+        </div>
       </div>
-      <div class="footer-social-icons social-icon">
-        <a
-          href="https://github.com/mcmontseny"
-          target="_blank"
-          class="social-icon"
-        >
-          <i class="fab fa-github text-white"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/blogytech/"
-          target="_blank"
-          class="social-icon"
-        >
-          <i class="fa fa-instagram text-white"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+
+    <script src="json-tools.js"></script>
+  </body>
 </html>
