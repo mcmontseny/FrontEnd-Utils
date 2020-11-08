@@ -163,6 +163,12 @@ button {
   padding: 1.5em 1em;
   margin: 0 auto;
   max-width: 1920px;
+  
+  /* Provisional Fixed */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-container {
