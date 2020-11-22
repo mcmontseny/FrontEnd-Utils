@@ -20,6 +20,7 @@
     <nav class="navbar">
       <h4 class="text-white m-0">MCM FrontEnd Utils</h4>
     </nav>
+
     <!-- Header -->
     <header class="header">
       <div class="header-title">
@@ -40,35 +41,46 @@
       </p>
 
       <div class="json-container">
-        <textarea
+        <div class="json-textarea-container">
+          <textarea
           id="json-input"
-          class="json-textarea"
           rows="18"
           cols="120"
           placeholder="Input JSON"
+          style="height: 100%;"
         ></textarea>
+        </div>
+
         <div class="json-buttons-container">
           <button class="json-buttons" onclick="jsonBeautify()">
-            Beautify
+           💖 Beautify JSON
           </button>
-          <button class="json-buttons" onclick="jsonMinify()">Minify</button>
-          <button class="json-buttons" onclick="jsonValidate()">
-            Validate
+          <button class="json-buttons" onclick="jsonMinify()">
+            ✨ Minify JSON
           </button>
           <button class="json-buttons" onclick="jsonToXml()">
-            JSON to XML
+            🔮 JSON to XML
+          </button>
+          <button class="json-buttons" onclick="jsonValidate()">
+            ✅ Validate
           </button>
           <button class="json-buttons" onclick="downloadOutput()">
-            Download Output
+            📥 Download Output
+          </button>
+          <button class="json-buttons" onclick="clearAll()">
+            🗑️ Clear All
           </button>
         </div>
-        <textarea
+
+        <div class="json-textarea-container">
+          <textarea
           id="json-output"
-          class="json-textarea"
           rows="18"
           cols="120"
           placeholder="Output JSON"
+          style="height: 100%;"
         ></textarea>
+        </div>
       </div>
     </div>
 

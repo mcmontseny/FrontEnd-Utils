@@ -1,13 +1,5 @@
 // ---- JSON TOOLS ---- //
 
-// TODO TASKS:
-
-// Before execute functions validate input JSON.
-// Generarte button Clear All.
-// Message not valid on output if fail any function.
-// Clear individual textArea and have Clipboard Option.
-// Testing Functions with large JSON.
-
 // Enum with File Types
 const fileType = {
   NO_TPYE: 0,
@@ -18,21 +10,31 @@ const fileType = {
 // Set Variables
 const input = document.getElementById("json-input");
 const output = document.getElementById("json-output");
-let type = fileType.NO_TPYE;
 const a = document.createElement("a");
+let type = fileType.NO_TPYE;
 
-// -- Principal Functions --
+// ---- Principal Functions ---- //
 
 // Set to output textArea beautify JSON (2 spaces)
 function jsonBeautify() {
-  type = fileType.JSON;
-  output.value = JSON.stringify(JSON.parse(input.value), null, 2);
+  try {
+    this.jsonValidate();
+    type = fileType.JSON;
+    output.value = JSON.stringify(JSON.parse(input.value), null, 2);
+  } catch (error) {
+    type = fileType.NO_TPYE;
+  }
 }
 
 // Set to output textArea minify JSON (1 line)
 function jsonMinify() {
-  type = fileType.JSON;
-  output.value = JSON.stringify(JSON.parse(input.value));
+  try {
+    this.jsonValidate();
+    type = fileType.JSON;
+    output.value = JSON.stringify(JSON.parse(input.value));
+  } catch (error) {
+    type = fileType.NO_TPYE;
+  }
 }
 
 // Set to output textArea Validation state. If fail, I set error.
@@ -48,10 +50,17 @@ function jsonValidate() {
 
 // Set to output textArea XML Object.
 function jsonToXml() {
-  type = fileType.XML;
-  output.value = `<?xml version="1.0" encoding="utf-8" ?>${OBJToXML(
-    JSON.parse(input.value)
-  )}`;
+  try {
+    this.jsonValidate();
+    type = fileType.XML;
+    const xml = `<?xml version="1.0" encoding="utf-8" ?><obj>${OBJToXML(
+      JSON.parse(input.value)
+    )}</obj>`;
+
+    output.value = this.beautifyXml(xml, '  ');
+  } catch (error) {
+    type = fileType.NO_TPYE;
+  }
 }
 
 // Download Output content
@@ -69,7 +78,13 @@ function downloadOutput() {
   }
 }
 
-// -- Secondary Functions --
+// Clear all of textArea Inputs
+function clearAll() {
+  input.value = "";
+  output.value = "";
+}
+
+// ---- Secondary Functions ---- //
 
 // Function: https://stackoverflow.com/questions/48788722/json-to-xml-using-javascript
 // user: https://stackoverflow.com/users/3238392/andrei-rosu
@@ -94,4 +109,18 @@ function OBJToXML(obj) {
   }
   var xml = xml.replace(/<\/?[0-9]{1,}>/g, "");
   return xml;
+}
+
+// Function: https://stackoverflow.com/questions/376373/pretty-printing-xml-with-javascript
+// user: https://stackoverflow.com/users/1689890/arcturus
+
+function beautifyXml(xml, tab) { // tab = optional indent value, default is tab (\t)
+    var formatted = '', indent= '';
+    tab = tab || '\t';
+    xml.split(/>\s*</).forEach(function(node) {
+        if (node.match( /^\/\w/ )) indent = indent.substring(tab.length); // decrease indent by one 'tab'
+        formatted += indent + '<' + node + '>\r\n';
+        if (node.match( /^<?\w[^>]*[^\/]$/ )) indent += tab;              // increase indent
+    });
+    return formatted.substring(1, formatted.length-3);
 }
