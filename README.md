@@ -21,6 +21,6 @@ _Algunas herramientas útiles para trabajar con archivos JSON._
 
 ## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
+* Comparte con tus colegas este proyecto 📢
 ---
 ⌨️ con ❤️ por [mcmontseny](https://github.com/mcmontseny) 😊
