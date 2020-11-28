@@ -1,6 +1,6 @@
 # MCM FrontEnd Utils
 
-_Página Web con algunas herramientas básicas para hacer la vida más fácil a los desarrolladores web._ 🛠️🌎 
+_Página Web con algunas herramientas básicas para hacer la vida más fácil a los desarrolladores web._ 🌎🛠️
 
 ## Ejecutar herramienta 🚀
 
@@ -8,35 +8,16 @@ _Para poder utilizar esta web solo debes descargar el repositorio y ejecutar el 
 
 ## Herramientas ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+_Explicación básica de todas las herramientas disponibles en la web._
 
-### Analice las pruebas end-to-end 🔩
+### 1. JSON Tools 🔩
 
-_Explica que verifican estas pruebas y por qué_
+_Algunas herramientas útiles para trabajar con archivos JSON._
 
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* 1.1 JSON Beautify 💖
+* 1.2 JSON Minify ✨
+* 1.3 JSON to XML 🔮
+* 1.4 JSON Validate ✅
 
 ## Autores ✒️
 
