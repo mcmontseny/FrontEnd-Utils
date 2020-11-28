@@ -10,7 +10,7 @@
 
 # MCM FrontEnd Utils
 
-Página Web con algunas herramientas básicas para hacer la vida más fácil a los desarrolladores web.
+_Página Web con algunas herramientas básicas para hacer la vida más fácil a los desarrolladores web._
 
 ## Comenzando 🚀
 
