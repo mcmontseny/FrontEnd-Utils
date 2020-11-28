@@ -17,7 +17,7 @@ _Algunas herramientas útiles para trabajar con archivos JSON._
 * 1.1 JSON Beautify 💖
 * 1.2 JSON Minify ✨
 * 1.3 JSON to XML 🔮
-* 1.4 JSON Validate ✅
+* 1.4 JSON Validate ☑️
 
 ## Expresiones de Gratitud 🎁
 
