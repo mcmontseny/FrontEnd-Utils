@@ -63,6 +63,16 @@ function jsonToXml() {
   }
 }
 
+// Copy Output to Clipboard
+function copyToClipboard() {
+  type = fileType.NO_TPYE;
+  if (!output.value) {
+    alert('Nothing available to copy');
+  } else {
+    navigator.clipboard.writeText(output.value);
+  } 
+}
+
 // Download Output content
 function downloadOutput() {
   if (type === fileType.JSON || type === fileType.XML) {

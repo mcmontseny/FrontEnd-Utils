@@ -62,6 +62,9 @@
           <button class="json-buttons" onclick="jsonValidate()">
             ✅ Validate
           </button>
+          <button class="json-buttons" onclick="copyToClipboard()">
+            📋 Copy Output
+          </button>
           <button class="json-buttons" onclick="downloadOutput()">
             📥 Download Output
           </button>
@@ -79,6 +82,58 @@
           style="height: 100%;"
         ></textarea>
         </div>
+      </div>
+    </div>
+
+    <!-- TEXT Formatter -->
+    <div class="tool-container">
+      <p class="tool-title">TEXT FORMATTER</p>
+      <p class="tool-subtitle">
+        Esta herramienta nos puede servir para formatear un texto plano a nuestro gusto.
+      </p>
+      <p class="tool-subtitle">
+        Ex: hola mundo
+      </p>
+
+      <div class="text-container">
+        <div class="text-textarea-container">
+          <textarea
+          id="text-input"
+          rows="5"
+          cols="102"
+          placeholder="Input TEXT"
+          style="height: 100%;"
+        ></textarea>
+        </div>
+
+    <div class="text-buttons-container">
+          <button class="text-buttons" onclick="textToUppercase()">
+            🔼 UPPERCASE
+          </button>
+          <button class="text-buttons" onclick="textToLowercase()">
+            🔽 lowercase
+          </button>
+          <button class="text-buttons" onclick="textToCapitalize()">
+            🅰️ Capitalize
+          </button>
+          <button class="text-buttons" onclick="copyToClipboard()">
+            📋 Copy Text
+          </button>
+          <button class="text-buttons" onclick="clearText()">
+            🗑️ Clear Text
+          </button>
+        </div>
+
+        <!--     
+        <div class="json-textarea-container">
+          <textarea
+          id="json-output"
+          rows="18"
+          cols="120"
+          placeholder="Output JSON"
+          style="height: 100%;"
+        ></textarea>
+        </div> -->
       </div>
     </div>
 
@@ -121,5 +176,6 @@
     </footer>
 
     <script src="js/json-formatter.js"></script>
+    <script src="js/text-formatter.js"></script>
   </body>
 </html>

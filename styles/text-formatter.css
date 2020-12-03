@@ -1,0 +1,23 @@
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+.text-textarea-container {
+  margin: 0px 8px;
+}
+
+.text-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.text-buttons {
+  margin: 8px 4px;
+  padding: 10px 20px;
+}
