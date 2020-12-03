@@ -1,0 +1,33 @@
+.json-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+.json-icons {
+  font-size: 22px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+}
+
+.json-buttons {
+  margin: 8px 0px;
+  padding: 10px 20px;
+}
+
+.json-buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 9%;
+}
+
+.json-textarea-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px 8px;
+  width: 44%;
+}
