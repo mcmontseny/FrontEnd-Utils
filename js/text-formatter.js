@@ -22,7 +22,7 @@ function textToCapitalize() {
 }
 
 // Copy Output to Clipboard
-function copyToClipboard() {
+function textCopyToClipboard() {
   if (!txtInput.value) {
     alert("Nothing available to copy");
   } else {
@@ -31,6 +31,6 @@ function copyToClipboard() {
 }
 
 // Clear textArea Input
-function clearText() {
+function textClear() {
   txtInput.value = "";
 }

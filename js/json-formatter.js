@@ -64,7 +64,7 @@ function jsonToXml() {
 }
 
 // Copy Output to Clipboard
-function copyToClipboard() {
+function jsonCopyToClipboard() {
   type = fileType.NO_TPYE;
   if (!output.value) {
     alert('Nothing available to copy');
@@ -74,7 +74,7 @@ function copyToClipboard() {
 }
 
 // Download Output content
-function downloadOutput() {
+function jsonDownloadOutput() {
   if (type === fileType.JSON || type === fileType.XML) {
     a.href = `data:${
       type === fileType.JSON
@@ -89,7 +89,7 @@ function downloadOutput() {
 }
 
 // Clear all of textArea Inputs
-function clearAll() {
+function jsonClearAll() {
   input.value = "";
   output.value = "";
 }
