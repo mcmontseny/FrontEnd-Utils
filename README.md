@@ -23,9 +23,9 @@ _Esta herramienta nos puede servir para Formatear, Minificar o Validar un objeto
 
 _Esta herramienta nos permite convertir texto a minúsculas, mayúsculas o capitalizar._
 
-* 2.1 Text Uppercase ⬆️
-* 2.2 Text Lowercase ⬇️
-* 2.3 Text Capitalize 🅱️
+* 2.1 Text Uppercase 🔼
+* 2.2 Text Lowercase 🔽
+* 2.3 Text Capitalize 🅰️
 
 ## Expresiones de Gratitud 🎁
 
