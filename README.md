@@ -19,6 +19,14 @@ _Esta herramienta nos puede servir para Formatear, Minificar o Validar un objeto
 * 1.3 JSON to XML 🔮
 * 1.4 JSON Validate ☑️
 
+### 2. TEXT FORMATTER 🔩
+
+_Esta herramienta nos permite convertir texto a minúsculas, mayúsculas o capitalizar._
+
+* 2.1 Text Uppercase ⬆️
+* 2.2 JSON Lowercase ⬇️
+* 2.3 JSON Capitalize ↕️
+
 ## Expresiones de Gratitud 🎁
 
 * Comparte con tus colegas este proyecto 📢
