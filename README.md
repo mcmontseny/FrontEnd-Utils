@@ -4,7 +4,9 @@ _Página Web con algunas herramientas básicas para hacer la vida más fácil a 
 
 ## Ejecutar herramienta 🚀
 
-_Para poder utilizar esta web solo debes descargar el repositorio y ejecutar el index.html._
+_Para poder utilizar esta herramienta online, visita el siguiente link: https://mcmontseny.github.io/frontend-tools/_
+
+_Para poder utilizar esta herramienta en local, solo debes descargar el repositorio y ejecutar el index.html._
 
 ## Herramientas ⚙️
 
@@ -26,6 +28,14 @@ _Esta herramienta nos permite convertir texto a minúsculas, mayúsculas o capit
 * 2.1 Text Uppercase 🔼
 * 2.2 Text Lowercase 🔽
 * 2.3 Text Capitalize 🅰️
+
+### 3. SUM NUMBERS 🔩
+
+_Esta herramienta nos permite sumar todos los números estén separados por espacios, comas o saltos de línea.
+Devuele el total de números de la lista, el total de la suma, el promedio.
+Importante: La separación de los decimales debe hacerse con puntos._
+
+* 3.1 Calculate Total 🧮
 
 ## Expresiones de Gratitud 🎁
 
