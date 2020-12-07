@@ -1,4 +1,4 @@
-.text-container {
+.sum-numbers-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -6,11 +6,11 @@
   max-width: 100vw;
 }
 
-.text-textarea-container {
+.text-sum-numbers-container {
   margin: 0px 8px;
 }
 
-.text-buttons-container {
+.sum-buttons-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -18,7 +18,11 @@
   margin: 0px 4px;
 }
 
-.text-buttons {
+.sum-buttons {
   margin: 8px 4px;
   padding: 10px 20px;
+}
+
+.sum-numbers-results {
+  margin: 0px 8px;
 }

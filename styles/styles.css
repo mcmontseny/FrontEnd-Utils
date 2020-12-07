@@ -1,6 +1,7 @@
-@import "tool.css";  /* Import Tools Styles */
+@import "tool.css"; /* Import Tools Styles */
 @import "json-formatter.css"; /* Import JSON FORMATTER Styles */
 @import "text-formatter.css"; /* Import TEXT FORMATTER Styles */
+@import "sum-numbers.css"; /* Import SUM NUMBERS Styles */
 
 /* CSS Reset */
 
@@ -189,17 +190,17 @@ button {
 }
 
 .header {
-  background: #fc4a1a; /* fallback for old browsers */
+  /* background: #fc4a1a;
   background: -webkit-linear-gradient(
     to right,
     #f7b733,
     #fc4a1a
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     #f7b733,
     #fc4a1a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); */
 
   /* background: #40E0D0;
   background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); 
@@ -208,6 +209,20 @@ button {
   background: #ee0979;
   background: -webkit-linear-gradient(to right, #ff6a00, #ee0979); 
   background: linear-gradient(to right, #ff6a00, #ee0979); */
+
+  background: #40e0d0;
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  );
 
   color: white;
   padding-bottom: 84px;
@@ -236,4 +251,8 @@ button {
 
 .text-center {
   text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
 }

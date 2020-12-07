@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>MCM FrontEnd Utils</title>
+  <title>FrontEnd-Utils</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Styles -->
@@ -18,7 +18,7 @@
   ></script>
   <body>
     <nav class="navbar">
-      <h4 class="text-white m-0">MCM FrontEnd Utils</h4>
+      <h4 class="text-white m-0">FrontEnd-Utils</h4>
     </nav>
 
     <!-- Header -->
@@ -32,7 +32,8 @@
     <div class="tool-container">
       <p class="tool-title">JSON FORMATTER</p>
       <p class="tool-subtitle">
-        Esta herramienta nos puede servir para Formatear, Minificar o Validar un objeto JSON. También dispone de la opción para convertir un JSON a XML.
+        Esta herramienta nos puede servir para Formatear, Minificar o Validar un
+        objeto JSON. También dispone de la opción para convertir un JSON a XML.
       </p>
       <p class="tool-subtitle">
         Ex: {"name":"Steve","surname":"Jobs","company":"Apple"}
@@ -41,17 +42,17 @@
       <div class="json-container">
         <div class="json-textarea-container">
           <textarea
-          id="json-input"
-          rows="18"
-          cols="120"
-          placeholder="Input JSON"
-          style="height: 100%;"
-        ></textarea>
+            id="json-input"
+            rows="15"
+            cols="10"
+            placeholder="Input JSON"
+            style="height: 100%"
+          ></textarea>
         </div>
 
         <div class="json-buttons-container">
           <button class="json-buttons" onclick="jsonBeautify()">
-           💖 Beautify JSON
+            💖 Beautify JSON
           </button>
           <button class="json-buttons" onclick="jsonMinify()">
             ✨ Minify JSON
@@ -62,25 +63,25 @@
           <button class="json-buttons" onclick="jsonValidate()">
             ✅ Validate
           </button>
-          <button class="json-buttons" onclick="copyToClipboard()">
+          <button class="json-buttons" onclick="jsonCopyToClipboard()">
             📋 Copy Output
           </button>
-          <button class="json-buttons" onclick="downloadOutput()">
+          <button class="json-buttons" onclick="jsonDownloadOutput()">
             📥 Download Output
           </button>
-          <button class="json-buttons" onclick="clearAll()">
+          <button class="json-buttons" onclick="jsonClearAll()">
             🗑️ Clear All
           </button>
         </div>
 
         <div class="json-textarea-container">
           <textarea
-          id="json-output"
-          rows="18"
-          cols="120"
-          placeholder="Output JSON"
-          style="height: 100%;"
-        ></textarea>
+            id="json-output"
+            rows="15"
+            cols="120"
+            placeholder="Output JSON"
+            style="height: 100%"
+          ></textarea>
         </div>
       </div>
     </div>
@@ -89,24 +90,23 @@
     <div class="tool-container">
       <p class="tool-title">TEXT FORMATTER</p>
       <p class="tool-subtitle">
-        Esta herramienta nos puede servir para formatear un texto plano a nuestro gusto.
+        Esta herramienta nos puede servir para formatear un texto plano a
+        nuestro gusto.
       </p>
-      <p class="tool-subtitle">
-        Ex: hola mundo
-      </p>
+      <p class="tool-subtitle">Ex: hello world</p>
 
       <div class="text-container">
         <div class="text-textarea-container">
           <textarea
-          id="text-input"
-          rows="5"
-          cols="102"
-          placeholder="Input TEXT"
-          style="height: 100%;"
-        ></textarea>
+            id="text-input"
+            rows="5"
+            cols="102"
+            placeholder="Input TEXT"
+            style="height: 100%"
+          ></textarea>
         </div>
 
-    <div class="text-buttons-container">
+        <div class="text-buttons-container">
           <button class="text-buttons" onclick="textToUppercase()">
             🔼 UPPERCASE
           </button>
@@ -116,10 +116,10 @@
           <button class="text-buttons" onclick="textToCapitalize()">
             🅰️ Capitalize
           </button>
-          <button class="text-buttons" onclick="copyToClipboard()">
+          <button class="text-buttons" onclick="textCopyToClipboard()">
             📋 Copy Text
           </button>
-          <button class="text-buttons" onclick="clearText()">
+          <button class="text-buttons" onclick="textClear()">
             🗑️ Clear Text
           </button>
         </div>
@@ -137,9 +137,48 @@
       </div>
     </div>
 
-    <!-- <div class="tool-container">
-      <h1 class="tool-title">FORMATER TEXT</h1>
-    </div> -->
+    <!-- SUM Numbers-->
+    <div class="tool-container">
+      <h1 class="tool-title">SUM NUMBERS</h1>
+      <p class="tool-subtitle">
+        Esta herramienta nos permite sumar todos los números estén separados por
+        espacios, comas o saltos de línea.<br> <label class="text-bold">Importante:</label> La separación de los decimales debe hacerse con puntos.
+      </p>
+
+      <p class="tool-subtitle">
+        10, 40 20
+        <br />
+        30
+      </p>
+
+      <div class="sum-numbers-container">
+        <div class="text-sum-numbers-container">
+          <textarea
+            id="sum-num-input"
+            rows="12"
+            cols="102"
+            placeholder="Input Numbers"
+            style="height: 100%"
+          ></textarea>
+        </div>
+
+        <div class="text-buttons-container">
+        <button class="sum-buttons" onclick="sumNumCalc()">
+          🧮 Calculate Total
+        </button>
+        <button class="sum-buttons" onclick="sumNumClear()">
+          🗑️ Clear Numbers
+        </button>
+        </div>
+
+
+        <div id="sum-results" class="sum-numbers-results" hidden>
+          <p>Total numbers: <label id="result-total-num" class="text-bold"></label></p>
+          <p>Sum of numbers: <label id="result-sum-num" class="text-bold"></label></p>
+          <p>Average of numbers: <label id="result-ave-num" class="text-bold"></label></p>
+        </div>
+      </div>
+    </div>
 
     <!-- <div class="tool-container">
       <h1 class="tool-title">FORMATER TEXT</h1>
@@ -177,5 +216,6 @@
 
     <script src="js/json-formatter.js"></script>
     <script src="js/text-formatter.js"></script>
+    <script src="js/sum-numbers.js"></script>
   </body>
 </html>
