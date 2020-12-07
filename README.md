@@ -1,6 +1,6 @@
 # FrontEnd-Tools
 
-_Página Web con algunas herramientas básicas para hacer la vida más fácil a los desarrolladores web._ 🌎🛠️
+_Web con algunas herramientas básicas para hacer la vida más fácil a los desarrolladores web._ 🌎🛠️
 
 ## Ejecutar herramienta 🚀
 
@@ -32,8 +32,9 @@ _Esta herramienta nos permite convertir texto a minúsculas, mayúsculas o capit
 ### 3. SUM NUMBERS 🔩
 
 _Esta herramienta nos permite sumar todos los números estén separados por espacios, comas o saltos de línea.
-Devuele el total de números de la lista, el total de la suma, el promedio.
-Importante: La separación de los decimales debe hacerse con puntos._
+Devuele el total de números de la lista, el total de la suma, el promedio._
+
+_Importante: La separación de los decimales debe hacerse con puntos._
 
 * 3.1 Calculate Total 🧮
 
